@@ -7,8 +7,8 @@
  */
 window.TAWOOS_CENTRAL_CONFIG = {
   provider: 'supabase',
-  supabaseUrl: 'https://qlzacdauoiapdroknnxu.supabase.co',
-  anonKey: 'sb_publishable_bEIpvBicXlliU5MdtLn3sg_LZZfVGY1',
+  supabaseUrl: 'https://YOUR_PROJECT_REF.supabase.co',
+  anonKey: 'YOUR_SUPABASE_ANON_KEY',
   edgeFunction: 'central-api',
   timeoutMs: 10000,
   request: async (path, options = {}, context = {}) => {
