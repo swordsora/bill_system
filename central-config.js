@@ -5,14 +5,14 @@
  * app.js مثل /login و /heartbeat و /devices و /accounts/sync و /login-attempts.
  * لا تضع service_role key هنا؛ المفتاح المسموح للواجهة هو anon key فقط.
  */
-window.TAWOOS_CENTRAL_CONFIG = {
+window.BILL_CENTRAL_CONFIG = {
   provider: 'supabase',
   supabaseUrl: 'https://YOUR_PROJECT_REF.supabase.co',
   anonKey: 'YOUR_SUPABASE_ANON_KEY',
   edgeFunction: 'central-api',
   timeoutMs: 10000,
   request: async (path, options = {}, context = {}) => {
-    const cfg = window.TAWOOS_CENTRAL_CONFIG;
+    const cfg = window.BILL_CENTRAL_CONFIG;
     if (!cfg.supabaseUrl || cfg.supabaseUrl.includes('YOUR_PROJECT_REF') ||
         !cfg.anonKey || cfg.anonKey.includes('YOUR_SUPABASE_ANON_KEY')) {
       throw new Error('أدخل supabaseUrl و anonKey في central-config.js أولًا');
